@@ -1,0 +1,450 @@
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #292544;
+  background: #fffdf9;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 7%;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #6045c5;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #49445a;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #7458d6;
+}
+
+button,
+.primary-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.login-btn {
+  background: #6045c5;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 85px 10%;
+  background: linear-gradient(120deg, #f2edff, #fff1e8);
+}
+
+.hero-content {
+  max-width: 590px;
+}
+
+.tagline {
+  color: #7458d6;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.12;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: #7458d6;
+}
+
+.hero-text,
+.section-text {
+  color: #686477;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: #7458d6;
+  color: white;
+  padding: 15px 22px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.primary-btn:hover,
+.login-btn:hover {
+  background: #5035ad;
+}
+
+.hero-art {
+  font-size: 130px;
+  background: white;
+  border-radius: 40% 60% 60% 40%;
+  padding: 35px;
+  flex-shrink: 0;
+}
+
+/* ================================
+   GALLERY SECTION
+================================ */
+
+.section {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+.section h2,
+.community h2,
+.about h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.search {
+  width: min(100%, 450px);
+  padding: 14px;
+  margin: 10px 0 35px;
+  border: 1px solid #ded8ef;
+  border-radius: 10px;
+}
+
+.search:focus,
+select:focus,
+input:focus {
+  outline: 2px solid #b6a4f5;
+  outline-offset: 2px;
+}
+
+/* Gallery cards */
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  text-align: left;
+}
+
+.art-card {
+  overflow: hidden;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px #30205012;
+  min-width: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px #30205020;
+}
+
+.art-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.art-info {
+  padding: 22px;
+  overflow-wrap: anywhere;
+}
+
+.category {
+  color: #7458d6;
+  background: #f0ebff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.art-info h3 {
+  margin: 15px 0 8px;
+}
+
+.art-info p {
+  color: #777184;
+  margin-bottom: 18px;
+}
+
+.like-btn {
+  padding: 10px 14px;
+  background: #fff0f2;
+  color: #c64f6a;
+}
+
+/* ================================
+   COMMUNITY SECTION
+================================ */
+
+.community {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 8%;
+  padding: 55px;
+  background: #fff1e8;
+  border-radius: 25px;
+}
+
+.community > div:first-child {
+  max-width: 620px;
+}
+
+.community p:not(.tagline),
+.about p {
+  color: #686477;
+  line-height: 1.8;
+}
+
+.community-icon {
+  font-size: 95px;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about {
+  max-width: 850px;
+  margin: auto;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #292544;
+  color: white;
+  line-height: 2;
+}
+
+footer p {
+  color: #ddd8ed;
+  font-size: 14px;
+}
+
+/* ================================
+   TABLET RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 20px 4%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 65px 7%;
+  }
+
+  .art-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section {
+    padding: 60px 5%;
+  }
+}
+
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 5%;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 55px 6%;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-art {
+    font-size: 85px;
+    padding: 25px;
+  }
+
+  .primary-btn {
+    padding: 13px 17px;
+    margin: 6px 3px;
+  }
+
+  .section {
+    padding: 50px 5%;
+  }
+
+  .section h2,
+  .community h2,
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .art-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .art-card img {
+    height: 240px;
+  }
+
+  .community {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 5%;
+    padding: 30px 20px;
+  }
+
+  .community-icon {
+    font-size: 75px;
+  }
+
+  .about {
+    padding: 45px 7%;
+  }
+
+  footer {
+    padding: 30px 12px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE PHONES
+================================ */
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 33px;
+  }
+
+  .hero-art {
+    font-size: 65px;
+  }
+
+  .nav-links {
+    gap: 11px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .section h2,
+  .community h2,
+  .about h2 {
+    font-size: 25px;
+  }
+
+  .art-info {
+    padding: 16px;
+  }
+
+  .art-card img {
+    height: 200px;
+  }
+}
