@@ -12,7 +12,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import ParentLogin from "./ParentLogin.jsx";
-import ArtworkUpload from "./ArtworkUpload.jsx";
+import ArtworkUpload from "./ArtWorkUpload.jsx";
 
 const API_URL = "https://creativekids.onrender.com/api/artworks";
 const MY_ARTWORKS_URL = "https://creativekids.onrender.com/api/my-artworks";
