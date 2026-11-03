@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:5000/api/auth/register";
+const API_URL = "https://creativekids.onrender.com/api/auth/register";
 
 export default function ParentRegister() {
   const navigate = useNavigate();

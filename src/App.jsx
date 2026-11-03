@@ -14,8 +14,8 @@ import "./App.css";
 import ParentLogin from "./ParentLogin.jsx";
 import ArtworkUpload from "./ArtworkUpload.jsx";
 
-const API_URL = "http://localhost:5000/api/artworks";
-const MY_ARTWORKS_URL = "http://localhost:5000/api/my-artworks";
+const API_URL = "https://creativekids.onrender.com/api/artworks";
+const MY_ARTWORKS_URL = "https://creativekids.onrender.com/api/my-artworks";
 
 function getAuthHeaders(includeJson = false) {
   const token = localStorage.getItem("parentToken");
